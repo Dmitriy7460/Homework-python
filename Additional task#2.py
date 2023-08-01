@@ -7,12 +7,16 @@
 # юзаем библиотеки random и time
 # предикаты НЕ ЗАДАЕМ как целое число!
 
+# import time
 
+# seconds = time.time()
+# print("Секунды с начала эпохи =", seconds)
 
+import time
+seconds1 = time.time()
 
 import random
 n= random.randint(3,15)
-
 
 for i in range(100):
     for i in range (random.randint(3,15)):
@@ -21,3 +25,6 @@ for i in range(100):
         y =  not r and not r
 
     print (not(x), "=", (y))
+
+seconds2 = time.time()
+print("Общее время выполнения программы:", (seconds2 - seconds1))
