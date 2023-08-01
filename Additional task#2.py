@@ -16,15 +16,15 @@ import time
 seconds1 = time.time()
 
 import random
-n= random.randint(3,15)
 
 for i in range(100):
     for i in range (random.randint(4,16)):
         r= random.choice([True, False])
         x = r or r 
-        y =  not r and not r
+        y =  (not r) and (not r)
 
-    print (not(x), "=", (y),(i))
+    print (not(x), "=", (y), "предикат:" ,(i))       
+   # print ("{0:} = {1:} предикант {2}". format (not(x),(y),(i)))          
 
 seconds2 = time.time()
 print("Общее время выполнения программы:", (seconds2 - seconds1))
